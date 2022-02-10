@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Україна - космічна держава</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -74,42 +75,45 @@
             <img src="./img/gagarin.png" alt="gagarin" class="bio__photo">
         </section>
 
-        <section class="gallery"> //slider  
-                <div class="gallery__photo-container">        
-                    <img src="/img/gallery-1.jpg" alt="gallery-photo" class="gallery__photo">
+        <section class="gallery"> 
+            <h3 class="gallery__title">Галерея</h3>
+            
+            <div class="slider__container">
+                <button class="slick-prev btn">Назад</button>
+                <div id="slider" class="slider">
+                    <div class="gallery__slide">        
+                        <img src="/img/gallery-1.jpg" alt="gallery-photo" class="gallery__photo">
+                    </div>
+    
+                    <div class="gallery__slide">
+                        <img src="/img/gallery-3.jpg" alt="gallery-photo" class="gallery__photo">
+                    </div>
+    
+                    <div class="gallery__slide">
+                        <img src="/img/gallery-4.jpg" alt="gallery-photo" class="gallery__photo">
+                    </div>
+    
+                    <div class="gallery__slide">
+                        <img src="/img/gallery-6.jpg" alt="gallery-photo" class="gallery__photo">
+                    </div>
+    
+                    <div class="gallery__slide">
+                        <img src="/img/gallery-7.jpg" alt="gallery-photo" class="gallery__photo">
+                    </div>
+                    
+                    <div class="gallery__slide">
+                        <img src="/img/gallery-8.jpg" alt="gallery-photo" class="gallery__photo">
+                    </div>
                 </div>
-
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-2.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
-
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-3.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
-
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-4.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
-
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-5.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
-
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-6.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
-
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-7.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
-                
-                <div class="gallery__photo-container">
-                    <img src="/img/gallery-8.jpg" alt="gallery-photo" class="gallery__photo">
-                </div>
+                <button class="btn slick-next">
+                 вперед
+                </button>
+            </div>
+            
         </section>
 
         <section class="map">
-
+            
         </section>
 
     </main>
@@ -117,6 +121,13 @@
     <footer>
 
     </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
 
 </body>
 </html>
