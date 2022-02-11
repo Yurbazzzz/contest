@@ -1,7 +1,7 @@
 body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
-  margin: 2% 5%;
+  margin: 2% 5% 0%;
   color: #5aeda4;
 }
 
@@ -128,4 +128,16 @@ body {
   color: #5aeda4;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Montserrat";
+  text-align: center;
 }
