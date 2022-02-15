@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
@@ -46,6 +47,66 @@ body {
   font-size: 60px;
 }
 
+.sidenav {
+  display: none;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 ширина - изменить это с помощью JavaScript */
+  position: fixed;
+  /* Оставайтесь на месте */
+  z-index: 1;
+  /* Оставайтесь сверху */
+  top: 0;
+  /* Оставайтесь наверху */
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  /* Отключить горизонтальную прокрутку */
+  padding-top: 60px;
+  /* Поместите контент в 60px сверху */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 второй эффект перехода слайда в боковой навигации */
+}
+
+/* Ссылки меню навигации */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
+.sidenav a:hover {
+  color: #5aeda4;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 2px;
+  right: 31px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.opnBtn-container {
+  display: none;
+}
+
+/* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
 .bio {
   border-top: 5px solid #101010;
   padding: 5% 3%;
@@ -231,6 +292,34 @@ body {
   .facts__container {
     margin: 5% 10%;
   }
+
+  .sidenav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .opnBtn-container {
+    display: block;
+    margin-left: 200px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__link {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 500px) {
   .accordion {
@@ -243,6 +332,10 @@ body {
   }
   .facts__title {
     font-size: 25px;
+  }
+
+  .bio__subtitle {
+    display: none;
   }
 }
 @media screen and (max-width: 425px) {

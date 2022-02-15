@@ -36,6 +36,26 @@
         }
 
     }
+
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+      }
+    
+      .opnBtn-container {
+        display: block;
+        margin-left: 200px;
+      }
+    
+      .header__nav {
+        display: none;
+      }
+
+      .header__link {
+          width: 50%;
+      }
 }
 
 @media screen and (max-width: 500px) {
@@ -51,6 +71,10 @@
         &__title {
         font-size: 25px;
         }
+    }
+
+    .bio__subtitle {
+        display: none;
     }
 }
 
