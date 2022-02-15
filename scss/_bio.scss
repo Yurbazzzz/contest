@@ -1,10 +1,12 @@
 .bio {
-    border-top: 5px solid #101010 ;
+    border-top: 5px solid #101010;
     padding: 5% 3%;
 
     display: flex;
-    font-family: 'Montserrat';
+    align-items: center;
+    font-family: "Montserrat";
     font-weight: bold;
+
 
     &__photo {
         width: 30%;
@@ -14,12 +16,11 @@
         width: 70%;
         padding: 5% 10%;
         color: #5aeda4;
-        text-align: center;
-        line-height: 25px;    
+        text-align: center; 
     }
 
     &__title {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
